@@ -12,7 +12,7 @@ header div {
 section {
   width: 50%;
 }
-
+  
 h4, header div, .experience-date-separator {
   color: red;
 }
