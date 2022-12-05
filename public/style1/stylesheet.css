@@ -1,0 +1,180 @@
+header {
+    padding: 5px 5px 5px 10%;
+  background: #979797;
+  margin: 0;
+}
+
+header div {
+    display: flex; 
+
+}
+
+section {
+  width: 50%;
+}
+
+h4, header div, .experience-date-separator {
+  color: red;
+}
+ 
+h4,
+.experience-type {
+  font-weight: bold;
+}
+
+.experience-details {
+  padding-left: 10%;
+  color: #979797;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5% 5% 0% 7%;
+  
+}
+h3{
+  border-bottom: #979797 solid;
+}
+
+h3::before {
+  content: '';
+  width: 15px;
+  height: 15px;
+  background-color: red;
+  border-radius: 50%;
+  margin-right: 10px;
+  display: inline-block;
+}
+
+#contact {
+  position: absolute;
+  right: 0;
+  top: 0 ;
+}
+#contact h3 {
+  display: none;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact {
+  display: flex;
+  margin: 0;
+}
+
+.contact-type {
+  padding-bottom: 10px;
+}
+
+
+
+.contact-value {
+  width: 80%;
+  padding-left: 10px;
+}
+
+dd {
+  text-decoration: none;
+  display: inline-block;
+  margin: 0%;
+  background-color: black;
+  color: red;
+}
+
+dd a{
+  text-decoration: none;
+  color: red;
+
+}
+
+dt {
+  background-color: red;
+  color: white;
+  width: 110px;
+  padding-left: 10px;
+}
+
+.skill span::after {
+  content: '';
+  background-color: red;
+  position: absolute;
+  height: 40px;
+  top: 0;
+  left: 0;
+  margin-top: 5px;
+  z-index:-1;
+}
+
+  .skills-secondary::before{
+    content: "Other:";
+    font-weight: bold;
+  }
+
+.skill[data-skill='1'] span::after {
+  width: 20%; 
+}
+
+.skill[data-skill='3'] span::after {
+  width:35%; 
+}
+
+.skill[data-skill='5'] span::after {
+  width:50%;
+}
+
+  .skill[data-skill='7'] span::after {
+    width: 70%;
+  }
+
+.skill[data-skill='9'] span::after {
+  width: 90%
+}
+
+
+.skill {
+  padding: 15px;
+  margin-bottom: 10px;
+  position:relative  ;
+  color: white;
+}
+
+.skill::before {
+  content: '';
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  background-color:lightgray;
+  z-index: -1;
+}
+
+.experience-institution::before {
+  content:"@ "
+}
+
+
+
+
+@media (max-width : 900px) {
+
+  
+
+  .content {
+      flex-direction: column;
+  }
+
+  header div {
+      flex-direction: column;
+  }
+
+  #contact {
+  position: static;
+  }
+}
+
